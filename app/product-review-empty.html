@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="images/icons/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#">Головна</a>
+            </li>
+            <li class="header__has-child">
+              <span>Тканини</span>
+              <ul class="header__item-child">
+                <li><a href="#">Тканини оптом</a></li>
+                <li><a href="#">Тканини в роздріб</a></li>
+              </ul>
+            </li>
+            <li class="header__has-child">
+              <span>Дитячий одяг</span>
+              <ul class="header__item-child">
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+              </ul>
+            </li>
+            <li class="header__has-child">
+              <span>Вироби з тканин</span>
+              <ul class="header__item-child">
+                <li><a href="#">Куртки</a></li>
+                <li><a href="#">Жилети</a></li>
+                <li><a href="#">Штани, шорти</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__avatar">
+          <img src="images/icons/user-cabinet.svg" alt="icon">
+        </a>
+        <a href="#" class="header__search" data-fancybox data-src="#modal-1">
+          <div class="header__search-icon">
+            <img src="images/icons/search.svg" alt="search">
+          </div>
+        </a>
+        <a href="#" class="header__like">
+          <img src="images/icons/heart.svg" alt="like">
+          <span>4</span>
+        </a>
+        <a href="#" class="header__basket">
+          <img src="images/icons/basket.svg" alt="baket">
+          <span>3</span>
+        </a>
+        <ul class="header__languege">
+          <li class="header__languege-child">
+            <span>UA</span>
+            <div class="header__languege-dropdown-wrap">
+              <ul class="header__languege-dropdown">
+                <li>
+                  <a href="#">UA</a>
+                </li>
+                <li>
+                  <a href="#">LT</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+
+      <section class="product">
+        <div class="container">
+          <div class="breadcrumbs">
+            <div class="breadcrumbs__inner">
+              <ul class="breadcrumbs__list">
+                <li> <a href="#">Головна</a></li>
+                <li> <a href="#">Тканини в роздріб</a></li>
+                <li> <a href="#">Батист</a></li>
+                <li> <span>Назва товару в один - два рядки</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="product__inner">
+            <div class="product__left">
+              <div class="product__slider">
+                <ul class="stickers">
+                  <li class="stickers__white">best</li>
+                </ul>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="product__slider-side">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__right">
+
+              <div class="product__box-top">
+                <h6>Назва товару в один - два рядки</h6>
+                <button class="product__add">
+                  <img class="product__add-one" src="images/icons/heart.svg" alt="like">
+                  <img class="product__add-two" src="images/icons/heart2.svg" alt="like">
+                </button>
+              </div>
+              <div class="rateYo-wrap">
+                <div class="rateYo_reviews"></div>
+                <div class="rateYo-review-quantity">
+                  (<span>7</span> відгуків)
+                </div>
+              </div>
+              <div class="product__box-price">
+                <div class="product-item__old-price">2499 - 5880 ₴</div>
+                <span>в залежності від довжини рулону</span>
+              </div>
+              <div class="product-item__price">
+                147 ₴ <span>/м.п.</span>
+              </div>
+              <div class="product__text">
+                <p>Lorem ipsum dolor sit amet consectetur. Egestas est euismod dolor hendrerit tempus vitae ac ut
+                  facilisi. Ipsum a mauris magnis urna egestas ut. Viverra congue egestas sit neque lacus sapien semper
+                  eu. Praesent nulla turpis a ornare sit iaculis massa aliquam.</p>
+              </div>
+
+              <div class="product__table-top">
+                <div class="product__table-item">
+                  <div class="product__table-col">Номінал:</div>
+                  <div class="product__table-col">Кількість:</div>
+                  <div class="product__table-col">Ціна</div>
+                  <div class="product__table-col"></div>
+                </div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <a href="#" class="btn btn--mint">Купити в 1 клик</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-tab">
+        <div class="container">
+          <div class="product-tab__btns">
+            <a href="#" class="btn">Description</a>
+            <a href="#" class="btn active">(<span>5</span> review)</a>
+          </div>
+
+          <div class="product-tab__inner">
+
+            <div class="product-tab__left">
+              <h5>Product reviews</h5>
+              <div class="product-tab__left-empty">
+                There are no reviews for this product yet. You can be the first to review
+              </div>
+            </div>
+            <div class="product-tab__right">
+              <h5>Leave your own review</h5>
+              <form class="form">
+                <div class="form__md">
+                  <div class="form__group">
+                    <label for="Name">Name</label>
+                    <input id="Name" maxlength="40" name="Name" required type="text"
+                      placeholder="for example: Alexander  ">
+                  </div>
+                  <div class="form__group">
+                    <label for="email">Email</label>
+                    <input id="email" maxlength="40" name="email" required type="email"
+                      placeholder="Example@info">
+                  </div>
+                </div>
+                <div class="form__rating">
+                  <span>Your rating</span>
+                  <div class="rateYo_choice"></div>
+                </div>
+                <div class="form__group">
+                  <label for="email">Review text</label>
+                 <textarea placeholder="for example: Alexander"></textarea>
+                </div>
+                <button class="btn">Send</button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__inner">
+            <div class="subscribe__left">
+              <h3 class="title">
+                Don't miss the latest news
+              </h3>
+              <p>Subscribe to the newsletter to find out the most important news and receive exclusive offers!</p>
+            </div>
+            <div class="subscribe__right">
+              <form class="form">
+                <div class="form__inner">
+                  <div class="form__input-wrap">
+                    <input type="email" placeholder="Your email address" required>
+                  </div>
+                  <button class="btn btn--yellow" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <a href="#" class="footer__logo">
+              <img src="images/icons/logo.svg" alt="logo">
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque eget semper nisi sed tempor. Tempor etiam eget dictum
+              aliquet platea hendrerit ornare amet.</p>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="#">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#">Sale</a>
+              </li>
+              <li>
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="#">Shipping and delivery</a>
+              </li>
+              <li>
+                <a href="#">Returns and exchanges</a>
+              </li>
+              <li>
+                <a href="#">Methods of payment</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="tel:+380123456789">
+                  <img src="images/icons/tel.svg" alt="tel">
+                  +38 (012) 345 67 89
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@company.com">
+                  <img src="images/icons/mail.svg" alt="mail">
+                  info@company.com
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/mark.svg" alt="mark">
+                  Country. str. 12, Street name
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© Copyright 2024</p>
+          <img src="images/content/footer-pay.png" alt="pay">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+  integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+  integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+  integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo">
+          <img src="images/icons/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#">Головна</a>
+            </li>
+            <li class="header__has-child">
+              <span>Тканини</span>
+              <ul class="header__item-child">
+                <li><a href="#">Тканини оптом</a></li>
+                <li><a href="#">Тканини в роздріб</a></li>
+              </ul>
+            </li>
+            <li class="header__has-child">
+              <span>Дитячий одяг</span>
+              <ul class="header__item-child">
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+              </ul>
+            </li>
+            <li class="header__has-child">
+              <span>Вироби з тканин</span>
+              <ul class="header__item-child">
+                <li><a href="#">Куртки</a></li>
+                <li><a href="#">Жилети</a></li>
+                <li><a href="#">Штани, шорти</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__avatar">
+          <img src="images/icons/user-cabinet.svg" alt="icon">
+        </a>
+        <a href="#" class="header__search" data-fancybox data-src="#modal-1">
+          <div class="header__search-icon">
+            <img src="images/icons/search.svg" alt="search">
+          </div>
+        </a>
+        <a href="#" class="header__like">
+          <img src="images/icons/heart.svg" alt="like">
+          <span>4</span>
+        </a>
+        <a href="#" class="header__basket">
+          <img src="images/icons/basket.svg" alt="baket">
+          <span>3</span>
+        </a>
+        <ul class="header__languege">
+          <li class="header__languege-child">
+            <span>UA</span>
+            <div class="header__languege-dropdown-wrap">
+              <ul class="header__languege-dropdown">
+                <li>
+                  <a href="#">UA</a>
+                </li>
+                <li>
+                  <a href="#">LT</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button class="header__menu-btn">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <main class="main">
+      <section class="intro">
+        <div class="intro__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('images/content/intro-slider1.webp');">
+              <div class="container">
+                <div class="intro__box">
+                  <h1>Тканини </h1>
+                  <span>оптом та в роздріб</span>
+                  <p>Lorem ipsum dolor sit amet consectetur. Lectus scelerisque sagittis libero semper. Mi blandit
+                    tincidunt vitae diam facilisis metus risus interdum.</p>
+                  <a href="#" class="btn btn--green">Детальніше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('images/content/intro-slider1.webp');">
+              <div class="container">
+                <div class="intro__box">
+                  <h2>Тканини</h2>
+                  <span>оптом та в роздріб 2</span>
+                  <p>Lorem ipsum dolor sit amet consectetur. Lectus scelerisque sagittis libero semper. Mi blandit
+                    tincidunt vitae diam facilisis metus risus interdum.</p>
+                  <a href="#" class="btn btn--green">Детальніше</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('images/content/intro-slider1.webp');">
+              <div class="container">
+                <div class="intro__box">
+                  <h2>Тканини</h2>
+                  <span>оптом та в роздріб 3</span>
+                  <p>Lorem ipsum dolor sit amet consectetur. Lectus scelerisque sagittis libero semper. Mi blandit
+                    tincidunt vitae diam facilisis metus risus interdum.</p>
+                  <a href="#" class="btn btn--green">Детальніше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="container container-soc">
+          <ul class="social">
+            <li>
+              <a href="#">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.99995 5.06555C6.38075 5.06555 5.06555 6.38075 5.06555 7.99995C5.06555 9.61915 6.38075 10.9376 7.99995 10.9376C9.61915 10.9376 10.9376 9.61915 10.9376 7.99995C10.9376 6.38075 9.61915 5.06555 7.99995 5.06555Z"
+                    fill="#93AF99" />
+                  <path
+                    d="M12.4288 0H3.5712C1.6032 0 0 1.6032 0 3.5712V12.4288C0 14.4 1.6032 16 3.5712 16H12.4288C14.4 16 16 14.4 16 12.4288V3.5712C16 1.6032 14.4 0 12.4288 0ZM8 13.184C5.1424 13.184 2.816 10.8576 2.816 8C2.816 5.1424 5.1424 2.8192 8 2.8192C10.8576 2.8192 13.184 5.1424 13.184 8C13.184 10.8576 10.8576 13.184 8 13.184ZM13.2928 3.76C12.688 3.76 12.1952 3.2704 12.1952 2.6656C12.1952 2.0608 12.688 1.568 13.2928 1.568C13.8976 1.568 14.3904 2.0608 14.3904 2.6656C14.3904 3.2704 13.8976 3.76 13.2928 3.76Z"
+                    fill="#93AF99" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.0496 6.00618C16.1351 6.00618 15.2913 5.70321 14.6137 5.19211C13.8365 4.60621 13.2782 3.74676 13.081 2.75617C13.0315 2.50709 13.0055 2.25393 13.0034 2H10.3909V9.13851L10.3878 13.0486C10.3878 14.094 9.70702 14.9803 8.76337 15.2921C8.48072 15.3855 8.18302 15.425 7.88577 15.4085C7.49266 15.3869 7.12428 15.2683 6.8041 15.0767C6.12274 14.6692 5.66077 13.93 5.64825 13.0843C5.62854 11.7626 6.69706 10.685 8.01785 10.685C8.27856 10.685 8.52895 10.7275 8.76337 10.8048V8.15231C8.51612 8.11569 8.26448 8.09659 8.01002 8.09659C6.56436 8.09659 5.21227 8.69752 4.24578 9.78013C3.51528 10.5983 3.0771 11.6421 3.0095 12.7366C2.92092 14.1744 3.44705 15.5412 4.46737 16.5496C4.61729 16.6977 4.77472 16.8351 4.93935 16.9618C5.81414 17.6351 6.8836 18 8.01002 18C8.26448 18 8.51612 17.9812 8.76337 17.9446C9.81562 17.7887 10.7865 17.3071 11.5527 16.5496C12.4941 15.6191 13.0143 14.3838 13.0199 13.069L13.0065 7.22995C13.4567 7.57719 13.9498 7.8648 14.4737 8.08564C15.2934 8.43149 16.1626 8.60676 17.0571 8.60644V6.00556C17.0577 6.00618 17.0502 6.00618 17.0496 6.00618Z"
+                    fill="#93AF99" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2005_2187)">
+                    <path
+                      d="M9.23908 16V8.70218H11.6877L12.055 5.85725H9.23908V4.04118C9.23908 3.21776 9.4668 2.65661 10.6489 2.65661L12.1541 2.65599V0.111384C11.8938 0.0775563 11.0003 0 9.96029 0C7.78861 0 6.30184 1.32557 6.30184 3.75942V5.85725H3.84583V8.70218H6.30184V16H9.23908Z"
+                      fill="#93AF99" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2005_2187">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="more-offers">
+        <div class="container">
+          <ul class="category-list">
+            <li class="category-list__item" style="background-image: url('images/content/category-item1.webp');">
+              <h6>Тканини оптом</h6>
+              <p>Lorem ipsum dolor sit amet consectetur. Blandit vitae id sapien pretium enim at elit convallis.</p>
+              <a href="#" class="btn btn--white">Більше</a>
+            </li>
+            <li class="category-list__item" style="background-image: url('images/content/category-item2.webp');">
+              <h6>Тканини в роздріб</h6>
+              <p>Lorem ipsum dolor sit amet consectetur. Blandit vitae id sapien </p>
+              <a href="#" class="btn btn--white">Більше</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="box-slider">
+        <div class="container">
+          <h3 class="title">Наші бестселери</h3>
+          <div class="box-slider__links">
+            <a class="active" href="#">Тканини</a>
+            <a href="#">Дитячий одяг</a>
+            <a href="#">Вироби з тканик</a>
+          </div>
+          <div class="product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6> Назва товару в один - два рядки Назва товару в один - два рядки Назва товару в один - два рядки
+                      Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-2.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-2.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-3.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-3.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-4.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-4.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                    <li class="stickers__red">sale</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="banner__inner">
+          <div class="banner__left">
+            <img src="images/content/banner-1.webp" alt="img">
+          </div>
+          <div class="banner__mid">
+            <h3 class="title">Назва пропозиції</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Rutrum est viverra purus ipsum malesuada eget. Massa fames hac
+              augue fames ut aliquet pretium ut. Augue mi ornare maecenas ac scelerisque dictumst. Consectetur elementum
+              faucibus arcu ac.</p>
+            <a href="#" class="btn btn--mint">Назва кнопки</a>
+            <span>*Lorem ipsum dolor sit amet consectetur. Rutrum est viverra purus ipsum malesuada eget. Massa fames
+              hac augue fames ut aliquet pretium ut.</span>
+          </div>
+          <div class="banner__right">
+            <img src="images/content/banner-2.webp" alt="img">
+          </div>
+        </div>
+      </section>
+
+      <section class="box-slider box-slider--twoo">
+        <div class="container">
+          <h3 class="title">Акційні Пропозиції</h3>
+          <div class="box-slider__links">
+            <a class="active" href="#">Тканини</a>
+            <a href="#">Дитячий одяг</a>
+            <a href="#">Вироби з тканик</a>
+          </div>
+          <div class="product-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6> Назва товару в один - два рядки Назва товару в один - два рядки Назва товару в один - два рядки
+                      Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-2.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-2.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-3.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-3.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-4.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-4.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-item">
+                  <ul class="stickers">
+                    <li class="stickers__white">best</li>
+                    <li class="stickers__red">sale</li>
+                  </ul>
+                  <div class="product-item__img-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                      <div class="swiper-slide product-item__img">
+                        <img class="product-item__img-one" src="images/content/product-1.webp" alt="product">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                    <div class="swiper-button-prev1">
+                      <img src="images/icons/arrow-down.svg" alt="arrow">
+                    </div>
+                  </div>
+                  <div class="product-item__inner">
+                    <div class="product-item__price">
+                      147 ₴ <span>/м.п.</span>
+                    </div>
+                    <h6>Назва товару в один - два рядки</h6>
+                    <div class="product-item__old-price">
+                      2499 - 5880 ₴
+                    </div>
+                    <span>в залежності від довжини рулону</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="review">
+        <div class="container">
+          <h3 class="title">
+            Що про нас говорять
+          </h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros felis
+            elit tellus augue porttitor feugiat. </p>
+          <div class="review__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review__item">
+                <div class="review__top">
+                  <div class="review__avatar">
+                    <span>О</span>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__name">Олександр </div>
+                    <div class="review__date">30.07.2023</div>
+                  </div>
+                  <div class="rateYo_reviews"></div>
+                </div>
+                <h6>Назва товару в один - два рядки</h6>
+                <span>відгук про товар</span>
+                <div class="review__text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat. Eu amet nisl quis eleifend sit condimentum ac nisl.
+                    Tellus neque ultrices amet viverra a sit cursus.</p>
+                </div>
+                <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+              </div>
+              <div class="swiper-slide review__item">
+                <div class="review__top">
+                  <div class="review__avatar">
+                    <span>К</span>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__name">Катя </div>
+                    <div class="review__date">30.07.2023</div>
+                  </div>
+                  <div class="rateYo_reviews"></div>
+                </div>
+                <h6>Назва товару в один - два рядки</h6>
+                <span>відгук про товар</span>
+                <div class="review__text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat. Eu amet nisl quis eleifend sit condimentum ac nisl.
+                    Tellus neque ultrices amet viverra a sit cursus.</p>
+                </div>
+                <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+              </div>
+              <div class="swiper-slide review__item">
+                <div class="review__top">
+                  <div class="review__avatar">
+                    <span>І</span>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__name">Інна</div>
+                    <div class="review__date">30.07.2023</div>
+                  </div>
+                  <div class="rateYo_reviews"></div>
+                </div>
+                <h6>Назва товару в один - два рядки</h6>
+                <span>відгук про товар</span>
+                <div class="review__text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat. Eu amet nisl quis eleifend sit condimentum ac nisl.
+                    Tellus neque ultrices amet viverra a sit cursus.</p>
+                </div>
+                <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+              </div>
+              <div class="swiper-slide review__item">
+                <div class="review__top">
+                  <div class="review__avatar">
+                    <span>О</span>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__name">Олександр </div>
+                    <div class="review__date">30.07.2023</div>
+                  </div>
+                  <div class="rateYo_reviews"></div>
+                </div>
+                <h6>Назва товару в один - два рядки</h6>
+                <span>відгук про товар</span>
+                <div class="review__text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat. Eu amet nisl quis eleifend sit condimentum ac nisl.
+                    Tellus neque ultrices amet viverra a sit cursus.</p>
+                </div>
+                <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+              </div>
+              <div class="swiper-slide review__item">
+                <div class="review__top">
+                  <div class="review__avatar">
+                    <span>К</span>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__name">Катя </div>
+                    <div class="review__date">30.07.2023</div>
+                  </div>
+                  <div class="rateYo_reviews"></div>
+                </div>
+                <h6>Назва товару в один - два рядки</h6>
+                <span>відгук про товар</span>
+                <div class="review__text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat. Eu amet nisl quis eleifend sit condimentum ac nisl.
+                    Tellus neque ultrices amet viverra a sit cursus.</p>
+                </div>
+                <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+              </div>
+              <div class="swiper-slide review__item">
+                <div class="review__top">
+                  <div class="review__avatar">
+                    <span>І</span>
+                  </div>
+                  <div class="review__info">
+                    <div class="review__name">Інна</div>
+                    <div class="review__date">30.07.2023</div>
+                  </div>
+                  <div class="rateYo_reviews"></div>
+                </div>
+                <h6>Назва товару в один - два рядки</h6>
+                <span>відгук про товар</span>
+                <div class="review__text">
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat. Eu amet nisl quis eleifend sit condimentum ac nisl.
+                    Tellus neque ultrices amet viverra a sit cursus.</p>
+                </div>
+                <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <h3 class="title">Корисна інформація</h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros felis
+            elit tellus augue porttitor feugiat.</p>
+          <div class="info__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-1.webp" alt="img">
+                    <ul>
+                      <li>20</li>
+                      <li>09</li>
+                      <li>24</li>
+                    </ul>
+                  </div>
+                  <h6>Назва статті в один-два рядки Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-2.webp" alt="img">
+                    <ul>
+                      <li>20</li>
+                      <li>09</li>
+                      <li>24</li>
+                    </ul>
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-3.webp" alt="img">
+                    <ul>
+                      <li>20</li>
+                      <li>09</li>
+                      <li>24</li>
+                    </ul>
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-4.webp" alt="img">
+                    <ul>
+                      <li>20</li>
+                      <li>09</li>
+                      <li>24</li>
+                    </ul>
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-1.webp" alt="img">
+                    <ul>
+                      <li>20</li>
+                      <li>09</li>
+                      <li>24</li>
+                    </ul>
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-2.webp" alt="img">
+                    <ul>
+                      <li>20</li>
+                      <li>09</li>
+                      <li>24</li>
+                    </ul>
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-3.webp" alt="img">
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info__item">
+                  <div class="info__img">
+                    <img src="images/content/info-4.webp" alt="img">
+                  </div>
+                  <h6>Назва статті в один-два рядки</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur. Aliquet sit praesent libero non amet. Viverra commodo eros
+                    felis elit tellus augue porttitor feugiat</p>
+                  <button class="review__more">Детальніше<img src="images/icons/arrow-right.svg" alt="arrow"></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/arrow-down.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__inner">
+            <div class="subscribe__left">
+              <h3 class="title">Не пропустіть останні новини</h3>
+              <p>Підпишіться на розсилку, щоб дізнаватися найважливіші новини та отримувати ексклюзивні пропозиції!</p>
+            </div>
+            <div class="subscribe__right">
+              <form class="form">
+                <div class="form__inner">
+                  <div class="form__input-wrap">
+                    <input type="email" placeholder="Ваша електронна адреса" required>
+                  </div>
+                  <button class="btn btn--green" type="submit">Підписатися</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <a href="#" class="footer__logo">
+              <img src="images/icons/logo.svg" alt="logo">
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque eget semper nisi sed tempor.</p>
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.99995 5.06555C6.38075 5.06555 5.06555 6.38075 5.06555 7.99995C5.06555 9.61915 6.38075 10.9376 7.99995 10.9376C9.61915 10.9376 10.9376 9.61915 10.9376 7.99995C10.9376 6.38075 9.61915 5.06555 7.99995 5.06555Z"
+                      fill="#121212"></path>
+                    <path
+                      d="M12.4288 0H3.5712C1.6032 0 0 1.6032 0 3.5712V12.4288C0 14.4 1.6032 16 3.5712 16H12.4288C14.4 16 16 14.4 16 12.4288V3.5712C16 1.6032 14.4 0 12.4288 0ZM8 13.184C5.1424 13.184 2.816 10.8576 2.816 8C2.816 5.1424 5.1424 2.8192 8 2.8192C10.8576 2.8192 13.184 5.1424 13.184 8C13.184 10.8576 10.8576 13.184 8 13.184ZM13.2928 3.76C12.688 3.76 12.1952 3.2704 12.1952 2.6656C12.1952 2.0608 12.688 1.568 13.2928 1.568C13.8976 1.568 14.3904 2.0608 14.3904 2.6656C14.3904 3.2704 13.8976 3.76 13.2928 3.76Z"
+                      fill="#121212"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2005_2187)">
+                      <path
+                        d="M9.23908 16V8.70218H11.6877L12.055 5.85725H9.23908V4.04118C9.23908 3.21776 9.4668 2.65661 10.6489 2.65661L12.1541 2.65599V0.111384C11.8938 0.0775563 11.0003 0 9.96029 0C7.78861 0 6.30184 1.32557 6.30184 3.75942V5.85725H3.84583V8.70218H6.30184V16H9.23908Z"
+                        fill="#121212"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2005_2187">
+                        <rect width="16" height="16" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="#">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#">Новини</a>
+              </li>
+              <li>
+                <a href="#">Оплата/доставка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="#">Про нас</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+              <li>
+                <a href="#">Політика конфеденційності</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <ul>
+              <li>
+                <a href="tel:+380123456789">
+                  <img src="images/icons/tel.svg" alt="tel">
+                  +38 (012) 345 67 89
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@company.com">
+                  <img src="images/icons/mail.svg" alt="mail">
+                  info@company.com
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <img src="images/icons/mark.svg" alt="mark">
+                  Країна, назва Вулиці, номер офісу/складу
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© Copyright 2024</p>
+          <img src="images/content/footer-pay.png" alt="pay">
+        </div>
+      </div>
+    </footer>
+    <div class="underfooter">
+      <div class="container">
+        <div class="underfooter__inner">
+          <div class="underfooter__col">
+            <a href="#" class="underfooter__search" data-fancybox data-src="#modal-1">
+              <img class="underfooter__search-icon" src="images/icons/search.svg" alt="search">
+              <div class="underfooter__text">
+                Search
+              </div>
+            </a>
+          </div>
+          <a href="#" class="underfooter__col">
+            <img src="images/icons/user-cabinet.svg" alt="icon">
+            <div class="underfooter__text">
+              Cabinet
+            </div>
+          </a>
+          <a href="#" class="underfooter__col">
+            <div href="#" class="header__like">
+              <img src="images/icons/heart.svg" alt="like">
+              <span>3</span>
+            </div>
+            <div class="underfooter__text">
+              Cabinet
+            </div>
+          </a>
+          <a href="#" class="underfooter__col">
+            <div href="#" class="header__basket">
+              <img src="images/icons/basket.svg" alt="baket">
+              <span>3</span>
+            </div>
+            <div class="underfooter__text">
+              Cart
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-1" class="modal">
+    <form class="form">
+      <span>Search</span>
+      <div class="modal__input-wrap">
+        <input type="text" required placeholder=" Alexander">
+        <button type="submit"><img src="images/icons/search.svg" alt="search"></button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+    integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>
