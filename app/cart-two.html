@@ -120,72 +120,152 @@
   <div class="wrapper">
     <main class="main">
 
-      <section class="cabinet-page page-padding">
+      <section class="checkout page-padding">
         <div class="container">
-          <h3 class="title">Change password</h3>
+          <h3 class="title">Оформлення замовлення</h3>
           <div class="breadcrumbs">
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
-                <li> <a href="#">Home</a></li>
-                <li> <span>Change password</span></li>
+                <li> <a href="#">Головна</a></li>
+                <li> <span>Оформлення замовлення</span></li>
               </ul>
             </div>
           </div>
+          <div class="checkout__inner form">
+            <div class="checkout__left">
+              <div class="checkout__box">
+                <div class="checkout__box-title">Ваші контактні дані
+                </div>
+                <div class="form__sm">
+                  <div class="form__group">
+                    <label for="Name">Ім’я</label>
+                    <input maxlength="40" name="Name" required="" type="text" placeholder="Олександр">
+                  </div>
+                  <div class="form__group">
+                    <label for="email">Прізвище</label>
+                    <input maxlength="40" name="Name" required="" type="text" placeholder="Іванов">
+                  </div>
+                  <div class="form__group">
+                    <label for="email">По батькові</label>
+                    <input maxlength="40" name="Name" required="" type="text" placeholder="Іванич">
+                  </div>
 
-          <div class="cabinet">
-            <div class="cabinet__inner">
-              <div class="cabinet__left">
-                <button class="cabinet-menu__close">
-                  <img src="images/icons/search-close.svg" alt="close">
-                </button>
-                <h6 class="cabinet__left-user">Олександр І.</h6>
-                <div class="cabinet__left-mail">johndoe@example.com</div>
-                <ul>
-                  <li><a href="#">Профіль</a></li>
-                  <li><a href="#">Замовлення</a></li>
-                  <li><a href="#">Лист бажань</a></li>
-                  <li><a href="#" class="active">Зміна паролю</a></li>
-                  <li><a href="#">Вихід</a></li>
-                </ul>
-              </div>
-              <div class="cabinet__right">
-                <button class="cabinet-show">
-                  <img src="images/icons/men-bt.svg" alt="icon">
-                  Меню
-                </button>
-                <h5>Зміна паролю</h5>
-                <form class="form">
-                  <div class="form__md">
-                    <div class="form__group">
-                      <label for="password">Мій пароль</label>
-                        <input id="password" maxlength="40" name="password" required="" type="password"
-                          placeholder="******">
-                    </div>
+                </div>
+                <div class="form__md">
+                  <div class="form__group">
+                    <label for="Phone">Номер телефону</label>
+                    <input maxlength="40" name="Phone" required="" type="number" placeholder="+38 (012) - 345 - 67 - 89">
                   </div>
-                  <div class="form__md">
-                    <div class="form__group">
-                      <label for="password">Новий пароль</label>
-                      <div class="form__pass-wrap">
-                        <input id="password" maxlength="40" name="password" required="" type="password"
-                        placeholder="******">
-                        <span class="form__input-show"></span>
-                      </div>
-                    </div>
-                    <div class="form__group">
-                      <label for="password">Повторити пароль</label>
-                      <div class="form__pass-wrap">
-                        <input id="password" maxlength="40" name="password" required="" type="password"
-                        placeholder="******">
-                        <span class="form__input-show"></span>
-                      </div>
-                    </div>
+                  <div class="form__group">
+                    <label for="email">Email</label>
+                    <input maxlength="40" name="email" required="" type="email">
                   </div>
-                  <button class="btn btn--dark">Зберегти зміни</button>
-                </form>
+                </div>
               </div>
+              <div class="checkout__box">
+                <div class="checkout__box-title">Оплата</div>
+                <div class="basket-form">
+                  <label class="basket-form__label">
+                    <input class="basket-form__radio" type="radio" name="name1">
+                    <div class="basket-form__check-fake"></div>
+                    <span class="basket-form__check-text">Оплата картою</span>
+                  </label>
+                  <label class="basket-form__label">
+                    <input class="basket-form__radio" type="radio" name="name1">
+                    <div class="basket-form__check-fake"></div>
+                    <span class="basket-form__check-text">Оплата при отриманні</span>
+                  </label>
+  
+                </div>
+                <p class="checkout__subinfo">Lorem ipsum dolor sit amet consectetur. Fusce vitae vestibulum nam et elit tortor. Elit sagittis sed venenatis amet mauris eget purus scelerisque quam.</p>
+              </div>
+              <div class="checkout__box">
+                <div class="checkout__box-title">Доставка</div>
+                <div class="basket-form">
+                  <label class="basket-form__label">
+                    <input class="basket-form__radio" type="radio" name="name2">
+                    <div class="basket-form__check-fake"></div>
+                    <span class="basket-form__check-text">Нова пошта <strong>відділення</strong></span>
+                  </label>
+                  <label class="basket-form__label">
+                    <input class="basket-form__radio" type="radio" name="name2">
+                    <div class="basket-form__check-fake"></div>
+                    <span class="basket-form__check-text">Нова пошта <strong>поштомат</strong> </span>
+                  </label>
+                  <label class="basket-form__label">
+                    <input class="basket-form__radio" type="radio" name="name2">
+                    <div class="basket-form__check-fake"></div>
+                    <span class="basket-form__check-text">Нова пошта <strong>кур’єр</strong> </span>
+                  </label>
+                  <label class="basket-form__label">
+                    <input class="basket-form__radio" type="radio" name="name2">
+                    <div class="basket-form__check-fake"></div>
+                    <span class="basket-form__check-text">Самовивіз</span>
+                  </label>
+                </div>
+                  <div class="form__group">
+                    <label for="country">Область</label>
+                    <input name="country" required type="text">
+                  </div>
+           
+                  <div class="form__group">
+                    <label for="country">Населений пункт</label>
+                    <input name="country" required type="text">
+                  </div>
+           
+                  <div class="form__group">
+                    <label for="country">Відділення</label>
+                    <input name="country" required type="text">
+                  </div>
+           
+              </div>
+              <div class="checkout__box">
+                <div class="checkout__box-title">Коментар до замовлення</div>
+                <div class="form__group">
+                  <label for="email">Текст</label>
+                  <textarea></textarea>
+                </div>
+              </div>
+
+            </div>
+            <div class="cart__right cart__right--two">
+              <h6>Підсумки кошика</h6>
+              <div class="cart__right-box">
+                <h5>Товарів оптом</h5>
+                <div class="cart__right-info">
+                  <p>Кількість:</p>
+                  <span class="cart__info-price">10</span>
+                </div>
+                <div class="cart__right-info">
+                  <p>Всього:</p>
+                  <span class="cart__info-price"> 10 778₴ </span>
+                </div>
+              </div>
+              <div class="cart__right-box">
+                <h5>Товарів в роздріб</h5>
+                <div class="cart__right-info">
+                  <p>Кількість:</p>
+                  <span class="cart__info-price">6</span>
+                </div>
+                <div class="cart__right-info">
+                  <p>Всього:</p>
+                  <span class="cart__info-price"> 2 620₴ </span>
+                </div>
+              </div>
+           
+              <div class="cart__right-info cart__right-info--quantity">
+                <p>Доставка:</p>
+                <span class="cart__info-num">за тарифом перевізника</span>
+              </div>
+              <div class="cart__right-info cart__right-info--delivery">
+                <p>Всього вартість кошика</p>
+                <span class="cart__info-num">13 398 ₴</span>
+              </div>
+              <div class="cart__right-subinfo">Підтверджуючи замовлення, ви погоджуєтесь на обробку персональних даних.</div>
+              <button class="btn btn--green">Оформити замовлення</button>
+              <a href="#">Редагувати кошик</a>
             </div>
           </div>
-
 
         </div>
       </section>
@@ -307,21 +387,21 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-  integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
-  integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+    integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-<script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 
 
 </body>

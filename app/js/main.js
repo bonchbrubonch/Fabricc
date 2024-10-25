@@ -53,15 +53,19 @@ $(function () {
     $(".cabinet__left").removeClass("open");
   });
 
-  // accordeon
-  $(".accordeon dd").hide().prev().on("click", function () {
-    $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
-    $(this).next().not(":visible").slideDown().prev().addClass("active");
-    $(this).parent().toggleClass("open");
-  });
+ //accordeon
+ $(".accordeon dd").hide().prev().click(function () {
+  $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+  $(this).next().not(":visible").slideDown().prev().addClass("active");
+  $("dl").removeClass("open");
+  $(this).parent().toggleClass("open");
+});
 
-  $(".accordeon dl:first").addClass("open").find("dd").show();
-  $(".accordeon dl:first dt").addClass("active");
+// Додаємо клас "open" для першого елемента
+$(".accordeon dl:first").addClass("open");
+// Показуємо відповідний "dd" для першого елемента
+$(".accordeon dl:first dd").show();
+$(".accordeon dl:first dt").addClass("active");
 
   // rating star
   $(".rateYo_reviews").rateYo({
@@ -235,4 +239,14 @@ $(function () {
       item.classList.toggle('choice', item === option);
     });
   }
+});
+
+//
+$('.cabinet__items-wrap').each(function () {
+  let ths = $(this);
+  ths.find('.cabinet__right-items').not(':eq(1)').hide(); // Приховуємо всі, крім другого елемента
+  ths.find('.cabinet__btn').click(function () {
+    ths.find('.cabinet__btn').removeClass('active').eq($(this).index()).addClass('active');
+    ths.find('.cabinet__right-items').hide().eq($(this).index()).fadeIn(1000);
+  }).eq(1).addClass('active'); // Додаємо клас "active" другому елементу
 });

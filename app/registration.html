@@ -79,8 +79,9 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__avatar">
+        <a href="#" class="header__avatar header__avatar--active">
           <img src="images/icons/user-cabinet.svg" alt="icon">
+          О
         </a>
         <a href="#" class="header__search" data-fancybox data-src="#modal-1">
           <div class="header__search-icon">
@@ -119,111 +120,69 @@
   <div class="wrapper">
     <main class="main">
 
-      <section class="contacts page-padding">
+
+      <section class="sign-in page-padding">
         <div class="container">
-          <h3 class="title">Контакти</h3>
+          <h3 class="title">registration</h3>
           <div class="breadcrumbs">
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
                 <li> <a href="#">Головна</a></li>
-                <li> <span>Контакти</span></li>
+                <li> <span>Реєстрація</span></li>
               </ul>
             </div>
           </div>
 
-          <div class="contact">
-            <div class="contact__inner">
-              <div class="contact__left">
-                <div class="contact__box">
-                  <div class="contact__title">Контактна інформація</div>
-                  <ul class="contact__list">
-                    <li>
-                      <img src="images/icons/soc-1.svg" alt="tel">
-                      <a href="tel:+120123456789">+12 (012) 345 67 89</a>
-                      <a href="tel:+120123456789">+12 (012) 345 67 89</a>
-                    </li>
-                    <li>
-                      <img src="images/icons/soc-2.svg" alt="mark">
-                      <a href="#" target="_blank">м. Місто, вул. Назва вулиці, 11/11</a>
-                    </li>
-                    <li>
-                      <img src="images/icons/soc-3.svg" alt="clock">
-                      <p>Понеділок - П’ятниця: <br> 9:00 - 18:00</p>
-                    </li>
-                    <li>
-                      <img src="images/icons/soc-4.svg" alt="mail">
-                      <a href="mailto:info@company.com">info@company.com</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="contact__box contact__box--desk">
-                  <div class="contact__title">Ми в соціальних мережах</div>
-                  <ul class="contact__network">
-                    <li>
-                      <a href="#" target="_blank">
-                        <img src="images/icons/inst.svg" alt="instagram">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" target="_blank">
-                        <img src="images/icons/tik-tok.svg" alt="tiktok">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" target="_blank">
-                        <img src="images/icons/facebook.svg" alt="facebook">
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="contact__right">
-                <div class="contact__title">Форма зв’язку</div>
-                <p class="contact__subinfo">Ми раді бачити вас на нашому сайті! Якщо у вас є запитання, пропозиції або ви хочете зв'язатися з нами, будь ласка, використовуйте цю контактну форму. </p>
-                <form class="form">
-                  <div class="form__md">
-                    <div class="form__group">
-                      <label for="Name">Ім’я</label>
-                      <input id="Name" maxlength="40" name="Name" required type="text"
-                        placeholder="Олександр">
-                    </div>
-                    <div class="form__group">
-                      <label for="email">Email</label>
-                      <input id="email" maxlength="40" name="email" required type="email" placeholder="Example@info">
-                    </div>
-                  </div>
-                  <div class="form__group">
-                    <label for="email">Текст</label>
-                    <textarea ></textarea>
-                  </div>
-                  <button class="btn btn--mint">Відправити</button>
-                </form>
-                <div class="contact__box contact__box--mob">
-                  <div class="contact__title">We are on social media</div>
-                  <ul class="contact__network">
-                    <li>
-                      <a href="#" target="_blank">
-                        <img src="images/icons/inst.svg" alt="instagram">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" target="_blank">
-                        <img src="images/icons/tik-tok.svg" alt="tiktok">
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" target="_blank">
-                        <img src="images/icons/facebook.svg" alt="facebook">
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+          <div class="enter">
+            <div class="enter__box">
+              <a href="#" class="btn">Вхід</a>
+              <a href="#" class="btn active">Реєстрація</a>
             </div>
+            <form class="form">
+              <div class="form__md">
+                <div class="form__group">
+                  <label for="Name">Ваше ім’я</label>
+                  <input id="Name" maxlength="40" name="Name" required type="text" placeholder="Ім’я">
+                </div>
+                <div class="form__group">
+                  <label for="Name">Ваше Прізище</label>
+                  <input id="Name" maxlength="40" name="Name" required type="text" placeholder="Прізвище">
+                </div>
+              </div>
+              <div class="form__md">
+                <div class="form__group">
+                  <label for="email">Email</label>
+                  <input id="email" maxlength="40" name="email" required type="email" placeholder="Email address">
+                </div>
+                <div class="form__group">
+                  <label for="phone">Номер телефону</label>
+                  <input id="phone" maxlength="40" name="phone" required type="number" placeholder="+38 (0__) - ___ - __-__">
+                </div>
+              </div>
+              <div class="form__md">
+                <div class="form__group">
+                  <label for="password">Пароль</label>
+                    <input id="password" maxlength="40" name="password" required="" type="password" placeholder="********">
+                </div>
+                <div class="form__group">
+                  <label for="password">Повторити пароль</label>
+                    <input id="password" maxlength="40" name="password" required="" type="password" placeholder="********">
+                </div>
+              </div>
+  
+              <div class="form__bottom">
+                <div class="form__bottom-text">
+                  <span></span> Запам’ятати мене
+                </div>
+              </div>
+
+              <button class="btn btn--green">Детальніше</button>
+            </form>
           </div>
+
         </div>
       </section>
+
 
 
   </div>
