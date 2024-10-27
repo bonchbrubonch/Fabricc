@@ -148,6 +148,27 @@ $(".accordeon dl:first dt").addClass("active");
     }
   });
 
+  var swiperProductSlider = new Swiper(".product-slider_two-row", {
+    slidesPerView: 1.2,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    }
+  });
+
+
   var swiper = new Swiper(".info__slider", {
     slidesPerView: 1.2,
     spaceBetween: 15,

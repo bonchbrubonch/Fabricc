@@ -594,7 +594,13 @@
 	.swiper-button-prev {
 		top: -125px;
 	}
+
 }
+.product-slider_two-row{
+
+
+}
+
 
 .product-slider {
 	position: relative;
@@ -1391,7 +1397,6 @@
 
 	label {
 		color: rgb(153, 153, 153);
-		font-family: "Montserrat";
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 120%;
@@ -1405,7 +1410,6 @@
 	}
 
 	.select2-container--default .select2-selection--single .select2-selection__rendered {
-		font-family: "Montserrat";
 		font-size: 12px;
 		font-weight: 400;
 	}
@@ -2621,7 +2625,8 @@
 	.status-canceled {
 		background-color: #F43B00;
 	}
-	.status-done{
+
+	.status-done {
 		background-color: #93AF99;
 	}
 
@@ -2652,30 +2657,39 @@
 		align-items: center;
 		padding: 0 0 15px 0;
 		margin: 0 0 45px 0;
-		border-bottom: 1px solid rgb(153, 153, 153);
+
 
 		a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
 			color: rgb(43, 42, 41);
-			font-size: 22px;
-			font-weight: 500;
-			line-height: 140%;
+			font-family: "Raleway";
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 120%;
+			text-transform: uppercase;
 			text-decoration: underline;
 			text-decoration-color: transparent;
 			transition: linear .2s;
 
+			span {
+				display: block;
+				width: 100%;
+				border-bottom: 1px solid rgb(147, 175, 153);
+			}
+
 			img {
 				margin: 0 7px -3px 0;
-				transform: rotate(180deg);
-				width: 20px;
-				height: 20px;
+				width: 40px;
+				height: 40px;
 				transition: linear .2s;
 			}
 
 			&:hover {
-				text-decoration-color: rgb(43, 42, 41);
-
 				img {
-					transform: rotate(180deg) translateX(3px);
+					transform: translate(-3px);
 				}
 			}
 		}
@@ -2734,7 +2748,7 @@
 		h3 {
 			width: 100%;
 			color: rgb(43, 42, 41);
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 700;
 			line-height: 140%;
 		}
@@ -2754,12 +2768,16 @@
 
 	&__info-col {
 		color: rgb(43, 42, 41);
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 500;
 		line-height: 140%;
-
 	}
-
+	&__info-col:last-child{
+		font-weight: 700;
+	}
+	&__info-col:nth-child(3){
+		margin: 0 10px;
+	}
 	&__ord-info {
 		padding: 12px 24px;
 		display: flex;
@@ -2791,9 +2809,11 @@
 	&__buttons {
 		display: flex;
 	}
-	&__buttons{
+
+	&__buttons {
 		margin: 0 0 40px 0;
 	}
+
 	&__btn {
 		margin: 0 20px 0 0;
 		padding: 20px 40px;
@@ -2805,15 +2825,31 @@
 		background: rgba(255, 255, 255, 0.1);
 		cursor: pointer;
 		transition: linear .2s;
-		&:hover{
+
+		&:hover {
 			background-color: rgb(147, 175, 153);
 			color: #fff;
 		}
 	}
-	&__btn.active{
+
+	&__btn.active {
 		background-color: rgb(147, 175, 153);
 		color: #fff;
 	}
+
+	&__info-wrapp {
+		h6 {
+			margin: 15px 0 0 0;
+			padding: 15px 10px;
+			color: rgb(18, 18, 18);
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 140%;
+			background: rgba(235, 246, 245, 0.8);
+		}
+	}
+
+
 }
 
 /*end cabinet============*/

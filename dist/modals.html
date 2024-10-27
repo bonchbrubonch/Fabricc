@@ -24,9 +24,15 @@
     integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
     integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css"
+    integrity="sha512-lvaVbvmbHhG8cmfivxLRhemYlTT60Ly9Cc35USrpi8/m+Lf/f/T8x9kEIQq47cRj1VQIFuxTxxCcvqiQeQSHjQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -44,8 +50,25 @@
             <li>
               <a href="#">Home</a>
             </li>
-            <li>
-              <a href="#">catalog</a>
+            <li class="header__has-child">
+              <span>Catalog</span>
+              <ul class="header__item-child">
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+                <li><a href="#"> Home fragrances</a></li>
+              </ul>
             </li>
             <li>
               <a href="#">Sale</a>
@@ -55,24 +78,17 @@
             </li>
           </ul>
         </nav>
-        <form class="header__search">
+        <a href="#" class="header__search" data-fancybox data-src="#modal-1">
           <div class="header__search-icon">
             <img src="images/icons/search.svg" alt="search">
           </div>
-          <div class="header__search-inner">
-            <div class="header__search-input-wrap">
-              <input type="text" required>
-            </div>
-            <button class="header__search-btn">
-              <img src="images/icons/search.svg" alt="search">
-            </button>
-          </div>
-        </form>
+        </a>
         <a href="#" class="header__avatar">
-          <span>w</span>
+          <img src="images/icons/user-cabinet.svg" alt="icon">
         </a>
         <a href="#" class="header__like">
           <img src="images/icons/heart.svg" alt="like">
+          <span>4</span>
         </a>
         <a href="#" class="header__basket">
           <img src="images/icons/basket.svg" alt="baket">
@@ -103,82 +119,14 @@
     <main class="main">
 
       <div class="container">
-        <a class="btn" href="#" data-fancybox data-src="#modal-2">modal-1</a>
+        <a class="btn" href="#modal-2" data-fancybox data-src="#modal-2">modal-1</a>
         <a class="btn" href="#" data-fancybox data-src="#modal-3">modal-2</a>
+        <a class="btn" href="#" data-fancybox data-src="#modal-4">modal-3</a>
       </div>
-
 
 
 
     </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__col">
-            <a href="#" class="footer__logo">
-              <img src="images/icons/logo.svg" alt="logo">
-            </a>
-            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque eget semper nisi sed tempor. Tempor etiam eget dictum
-              aliquet platea hendrerit ornare amet.</p>
-          </div>
-          <div class="footer__col">
-            <ul>
-              <li>
-                <a href="#">F.A.Q</a>
-              </li>
-              <li>
-                <a href="#">Sale</a>
-              </li>
-              <li>
-                <a href="#">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <ul>
-              <li>
-                <a href="#">Shipping and delivery</a>
-              </li>
-              <li>
-                <a href="#">Returns and exchanges</a>
-              </li>
-              <li>
-                <a href="#">Methods of payment</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <ul>
-              <li>
-                <a href="tel:+380123456789">
-                  <img src="images/icons/tel.svg" alt="tel">
-                  +38 (012) 345 67 89
-                </a>
-              </li>
-              <li>
-                <a href="mailto:info@company.com">
-                  <img src="images/icons/mail.svg" alt="mail">
-                  info@company.com
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <img src="images/icons/mark.svg" alt="mark">
-                  Country. str. 12, Street name
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <p>© Copyright 2024</p>
-          <img src="images/content/footer-pay.png" alt="pay">
-        </div>
-      </div>
-    </footer>
   </div>
 
 
@@ -244,15 +192,15 @@
                   <option>White</option>
                 </select>
               </div> -->
-              <div class="dropdown">
+              <div class="dropdown" onclick="toggleDropdown(this)">
                 <button class="dropbtn">Choose a color</button>
                 <ul class="dropdown-content">
                   <li onclick="selectOption(this)">Black</li>
                   <li onclick="selectOption(this)">Blue</li>
-                  <li onclick="selectOption(this)">Orange </li>
-                  <li onclick="selectOption(this)">Pink </li>
-                  <li onclick="selectOption(this)">Red </li>
-                  <li onclick="selectOption(this)">White </li>
+                  <li onclick="selectOption(this)">Orange</li>
+                  <li onclick="selectOption(this)">Pink</li>
+                  <li onclick="selectOption(this)">Red</li>
+                  <li onclick="selectOption(this)">White</li>
                 </ul>
               </div>
             </div>
@@ -306,7 +254,7 @@
             </div>
             <div class="product__box-col">
               <span>Color:</span>
-              <!-- <div class="select">
+              <!-- <div id="select" class="select">
                 <select class="color2" id="color2" required name="color2">
                   <option>Black</option>
                   <option>Blue</option>
@@ -316,15 +264,15 @@
                   <option>White</option>
                 </select>
               </div> -->
-              <div class="dropdown">
+              <div class="dropdown" onclick="toggleDropdown(this)">
                 <button class="dropbtn">Choose a color</button>
                 <ul class="dropdown-content">
                   <li onclick="selectOption(this)">Black</li>
                   <li onclick="selectOption(this)">Blue</li>
-                  <li onclick="selectOption(this)">Orange </li>
-                  <li onclick="selectOption(this)">Pink </li>
-                  <li onclick="selectOption(this)">Red </li>
-                  <li onclick="selectOption(this)">White </li>
+                  <li onclick="selectOption(this)">Orange</li>
+                  <li onclick="selectOption(this)">Pink</li>
+                  <li onclick="selectOption(this)">Red</li>
+                  <li onclick="selectOption(this)">White</li>
                 </ul>
               </div>
             </div>
@@ -335,6 +283,20 @@
 
         </div>
       </div>
+    </div>
+  </div>
+  <div id="modal-4" class="modal">
+    <div class="modal__inner">
+      <h6>Forgot Password</h6>
+      <p>If you forgot your password, recover it by entering your email address. </p>
+      <form class="form">
+        <div class="form__group error">
+          <label for="email">Email</label>
+          <input id="email" maxlength="40" name="email" required="" type="email" >
+          <span class="error-text">Error</span>
+        </div>
+        <button class="btn btn--dark">Send</button>
+      </form>
     </div>
   </div>
 
@@ -352,8 +314,12 @@
     integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
     integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"
+    integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 

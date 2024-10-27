@@ -129,7 +129,9 @@
 	.header__nav li+li {
 		margin: 0 0 0 20px;
 	}
-
+	.cabinet__info-box {
+    max-width: 205px;
+	}
 
 
 
@@ -1305,7 +1307,6 @@
 		}
 
 		&__text {
-			font-family: 'Montserrat';
 			font-size: 8px;
 			font-weight: 400;
 			line-height: 120%;

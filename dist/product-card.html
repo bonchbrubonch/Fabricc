@@ -7,7 +7,8 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -38,37 +39,57 @@
         <nav class="header__nav">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#">Головна</a>
+            </li>
+            <li class="header__has-child">
+              <span>Тканини</span>
+              <ul class="header__item-child">
+                <li><a href="#">Тканини оптом</a></li>
+                <li><a href="#">Тканини в роздріб</a></li>
+              </ul>
+            </li>
+            <li class="header__has-child">
+              <span>Дитячий одяг</span>
+              <ul class="header__item-child">
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+              </ul>
+            </li>
+            <li class="header__has-child">
+              <span>Вироби з тканин</span>
+              <ul class="header__item-child">
+                <li><a href="#">Куртки</a></li>
+                <li><a href="#">Жилети</a></li>
+                <li><a href="#">Штани, шорти</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+                <li><a href="#">Назва підкатегорії</a></li>
+              </ul>
             </li>
             <li>
-              <a href="#">catalog</a>
-            </li>
-            <li>
-              <a href="#">Sale</a>
-            </li>
-            <li>
-              <a href="#">Bestsellers</a>
+              <a href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <form class="header__search">
+        <a href="#" class="header__avatar">
+          <img src="images/icons/user-cabinet.svg" alt="icon">
+        </a>
+        <a href="#" class="header__search" data-fancybox data-src="#modal-1">
           <div class="header__search-icon">
             <img src="images/icons/search.svg" alt="search">
           </div>
-          <div class="header__search-inner">
-            <div class="header__search-input-wrap">
-              <input type="text" required>
-            </div>
-            <button class="header__search-btn">
-              <img src="images/icons/search.svg" alt="search">
-            </button>
-          </div>
-        </form>
-        <a href="#" class="header__avatar">
-          <span>w</span>
         </a>
         <a href="#" class="header__like">
           <img src="images/icons/heart.svg" alt="like">
+          <span>4</span>
         </a>
         <a href="#" class="header__basket">
           <img src="images/icons/basket.svg" alt="baket">
@@ -76,11 +97,11 @@
         </a>
         <ul class="header__languege">
           <li class="header__languege-child">
-            <span>En</span>
+            <span>UA</span>
             <div class="header__languege-dropdown-wrap">
               <ul class="header__languege-dropdown">
                 <li>
-                  <a href="#">En</a>
+                  <a href="#">UA</a>
                 </li>
                 <li>
                   <a href="#">LT</a>
@@ -103,33 +124,37 @@
           <div class="breadcrumbs">
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">Category name</a></li>
-                <li> <span>Category name</span></li>
+                <li> <a href="#">Головна</a></li>
+                <li> <a href="#">Тканини в роздріб</a></li>
+                <li> <a href="#">Батист</a></li>
+                <li> <span>Назва товару в один - два рядки</span></li>
               </ul>
             </div>
           </div>
           <div class="product__inner">
             <div class="product__left">
               <div class="product__slider">
+                <ul class="stickers">
+                  <li class="stickers__white">best</li>
+                </ul>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="images/content/product-1.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/content/product-1.1.webp" alt="img">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
                     <img src="images/content/product-1.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/content/product-1.1.webp" alt="img">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
                     <img src="images/content/product-1.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/content/product-1.1.webp" alt="img">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                 </div>
               </div>
@@ -139,53 +164,68 @@
                     <img src="images/content/product-1.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/content/product-1.1.webp" alt="img">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
                     <img src="images/content/product-1.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/content/product-1.1.webp" alt="img">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
                     <img src="images/content/product-1.webp" alt="img">
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/content/product-1.1.webp" alt="img">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                 </div>
               </div>
             </div>
             <div class="product__right">
-              <ul class="stickers">
-                <li class="stickers__yellow">best</li>
-              </ul>
-              <div class="product-item__box">
-                <div class="product-item__price">
-                  220 €
-                </div>
-                <div class="product-item__old-price">
-                  250 €
-                </div>
+
+              <div class="product__box-top">
+                <h6>Назва товару в один - два рядки</h6>
+                <button class="product__add">
+                  <img class="product__add-one" src="images/icons/heart.svg" alt="like">
+                  <img class="product__add-two" src="images/icons/heart2.svg" alt="like">
+                </button>
               </div>
-              <h6>Product name product name</h6>
               <div class="rateYo-wrap">
                 <div class="rateYo_reviews"></div>
                 <div class="rateYo-review-quantity">
-                  (<span>7</span> review)
+                  (<span>7</span> відгуків)
                 </div>
               </div>
-              <div class="product__text">
-                <p>Lorem ipsum dolor sit amet consectetur. Blandit est laoreet et sed. Ut commodo facilisis commodo
-                  lectus aliquam habitant molestie amet.</p>
+              <div class="product__box-price">
+                <div class="product-item__old-price">2499 - 5880 ₴</div>
+                <span>в залежності від довжини рулону</span>
               </div>
-              <ul class="product__list">
-                <li>Eu lacus ante eget tincidunt libero.</li>
-                <li> Vestibulum auctor morbi enim donec elit 30%</li>
-              </ul>
-              <div class="product__box">
-                <div class="product__box-col">
-                  <span>Quantity:</span>
+              <div class="product-item__price">
+                147 ₴ <span>/м.п.</span>
+              </div>
+              <div class="product__text">
+                <p>Lorem ipsum dolor sit amet consectetur. Egestas est euismod dolor hendrerit tempus vitae ac ut
+                  facilisi. Ipsum a mauris magnis urna egestas ut. Viverra congue egestas sit neque lacus sapien semper
+                  eu. Praesent nulla turpis a ornare sit iaculis massa aliquam.</p>
+              </div>
+
+              <div class="product__table-top">
+                <div class="product__table-item">
+                  <div class="product__table-col">Номінал:</div>
+                  <div class="product__table-col">Кількість:</div>
+                  <div class="product__table-col">Ціна</div>
+                  <div class="product__table-col"></div>
+                </div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
                   <div class="calc">
                     <button class="calc__minus">
                       <img src="images/icons/minus.svg" alt="icon">
@@ -194,43 +234,100 @@
                     <button class="calc__plus">
                       <img src="images/icons/plus.svg" alt="icon">
                     </button>
-                    <a href="#" class="btn btn--orange">
-                      Переглянути
-                    </a>
                   </div>
                 </div>
-                <div class="product__box-col">
-                  <span>Color:</span>
-                  <div class="select">
-                    <select class="color" id="color" required name="color">
-                      <option>Black</option>
-                      <option>Blue</option>
-                      <option>Orange</option>
-                      <option>Pink</option>
-                      <option>Red</option>
-                      <option>White</option>
-                    </select>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
                   </div>
                 </div>
-              </div>
-              <div class="product__btns">
-                <button class="btn btn--dark">Add to cart</button>
-                <button class="product__add">
-                  <img class="product__add-one" src="images/icons/heart.svg" alt="like">
-                  <img class="product__add-two" src="images/icons/heart2.svg" alt="like">
-                </button>
-              </div>
-
-              <div class="product__bottom">
-                <div class="product__bottom-item">
-                  <strong>SKU:</strong>
-                  <p>29045-SB</p>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
                 </div>
-                <div class="product__bottom-item">
-                  <strong>Category: </strong>
-                  <p>Category name</p>
-                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
               </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <div class="product__table-item">
+                <div class="product__table-col">
+                  <p>рулон <strong>17</strong>  метрів</p>
+                  <div class="product__bottom-item">
+                    <strong>SKU:</strong>
+                    <p>29045-SB</p>
+                  </div>
+                </div>
+                <div class="product__table-col">
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly>
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <div class="product__table-col">2499 ₴</div>
+                <div class="product__table-col"><a href="#" class="btn btn--green">Додати в кошик</a></div>
+              </div>
+              <a href="#" class="btn btn--mint">Купити в 1 клик</a>
             </div>
           </div>
         </div>
@@ -239,8 +336,8 @@
       <section class="product-tab">
         <div class="container">
           <div class="product-tab__btns">
-            <a href="#" class="btn active">Description</a>
-            <a href="#" class="btn">(<span>5</span> review)</a>
+            <a href="#" class="btn active">Характеристики</a>
+            <a href="#" class="btn">(<span>7</span> відгуків)</a>
           </div>
           <div class="product-tab__content">
             <p>Lorem ipsum dolor sit amet consectetur. Libero integer pharetra pellentesque nullam pellentesque nisi
@@ -289,26 +386,22 @@
         <div class="container">
           <div class="subscribe__inner">
             <div class="subscribe__left">
-              <h3 class="title">
-                Don't miss the latest news
-              </h3>
-              <p>Subscribe to the newsletter to find out the most important news and receive exclusive offers!</p>
+              <h3 class="title">Не пропустіть останні новини</h3>
+              <p>Підпишіться на розсилку, щоб дізнаватися найважливіші новини та отримувати ексклюзивні пропозиції!</p>
             </div>
             <div class="subscribe__right">
               <form class="form">
                 <div class="form__inner">
                   <div class="form__input-wrap">
-                    <input type="email" placeholder="Your email address" required>
+                    <input type="email" placeholder="Ваша електронна адреса" required>
                   </div>
-                  <button class="btn btn--yellow" type="submit">Subscribe</button>
+                  <button class="btn btn--green" type="submit">Підписатися</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
-
-
     </main>
     <footer class="footer">
       <div class="container">
@@ -317,8 +410,37 @@
             <a href="#" class="footer__logo">
               <img src="images/icons/logo.svg" alt="logo">
             </a>
-            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque eget semper nisi sed tempor. Tempor etiam eget dictum
-              aliquet platea hendrerit ornare amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque eget semper nisi sed tempor.</p>
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.99995 5.06555C6.38075 5.06555 5.06555 6.38075 5.06555 7.99995C5.06555 9.61915 6.38075 10.9376 7.99995 10.9376C9.61915 10.9376 10.9376 9.61915 10.9376 7.99995C10.9376 6.38075 9.61915 5.06555 7.99995 5.06555Z"
+                      fill="#121212"></path>
+                    <path
+                      d="M12.4288 0H3.5712C1.6032 0 0 1.6032 0 3.5712V12.4288C0 14.4 1.6032 16 3.5712 16H12.4288C14.4 16 16 14.4 16 12.4288V3.5712C16 1.6032 14.4 0 12.4288 0ZM8 13.184C5.1424 13.184 2.816 10.8576 2.816 8C2.816 5.1424 5.1424 2.8192 8 2.8192C10.8576 2.8192 13.184 5.1424 13.184 8C13.184 10.8576 10.8576 13.184 8 13.184ZM13.2928 3.76C12.688 3.76 12.1952 3.2704 12.1952 2.6656C12.1952 2.0608 12.688 1.568 13.2928 1.568C13.8976 1.568 14.3904 2.0608 14.3904 2.6656C14.3904 3.2704 13.8976 3.76 13.2928 3.76Z"
+                      fill="#121212"></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_2005_2187)">
+                      <path
+                        d="M9.23908 16V8.70218H11.6877L12.055 5.85725H9.23908V4.04118C9.23908 3.21776 9.4668 2.65661 10.6489 2.65661L12.1541 2.65599V0.111384C11.8938 0.0775563 11.0003 0 9.96029 0C7.78861 0 6.30184 1.32557 6.30184 3.75942V5.85725H3.84583V8.70218H6.30184V16H9.23908Z"
+                        fill="#121212"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2005_2187">
+                        <rect width="16" height="16" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="footer__col">
             <ul>
@@ -326,26 +448,23 @@
                 <a href="#">F.A.Q</a>
               </li>
               <li>
-                <a href="#">Sale</a>
+                <a href="#">Новини</a>
               </li>
               <li>
-                <a href="#">Contacts</a>
+                <a href="#">Оплата/доставка</a>
               </li>
             </ul>
           </div>
           <div class="footer__col">
             <ul>
               <li>
-                <a href="#">Shipping and delivery</a>
+                <a href="#">Про нас</a>
               </li>
               <li>
-                <a href="#">Returns and exchanges</a>
+                <a href="#">Контакти</a>
               </li>
               <li>
-                <a href="#">Methods of payment</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Політика конфеденційності</a>
               </li>
             </ul>
           </div>
@@ -366,7 +485,7 @@
               <li>
                 <a href="#" target="_blank">
                   <img src="images/icons/mark.svg" alt="mark">
-                  Country. str. 12, Street name
+                  Країна, назва Вулиці, номер офісу/складу
                 </a>
               </li>
             </ul>
@@ -392,6 +511,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
     integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="js/main.min.js"></script>
