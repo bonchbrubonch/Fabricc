@@ -1,1 +1,11 @@
-<svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#C1D7C6" fill-opacity=".7" d="M0 0h40v40H0z"/><g clip-path="url(#clip0_325_11834)"><path d="M19.016 20l3.914 4.078c.125.125.125.25 0 .375l-.703.727c-.125.125-.25.125-.375 0l-4.782-4.992A.253.253 0 0117 20c0-.078.023-.14.07-.188l4.782-4.992c.109-.11.234-.101.375.024l.703.703c.125.125.125.25 0 .375L19.016 20z" fill="#121212"/></g><defs><clipPath id="clip0_325_11834"><path fill="#fff" transform="matrix(1 0 0 -1 17 26)" d="M0 0h6v12H0z"/></clipPath></defs></svg>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" fill="#C1D7C6" fill-opacity="0.7"/>
+<g clip-path="url(#clip0_325_11834)">
+<path d="M19.0156 20L22.9297 24.0781C23.0547 24.2031 23.0547 24.3281 22.9297 24.4531L22.2266 25.1797C22.1016 25.3047 21.9766 25.3047 21.8516 25.1797L17.0703 20.1875C17.0234 20.1406 17 20.0781 17 20C17 19.9219 17.0234 19.8594 17.0703 19.8125L21.8516 14.8203C21.9609 14.7109 22.0859 14.7187 22.2266 14.8437L22.9297 15.5469C23.0547 15.6719 23.0547 15.7969 22.9297 15.9219L19.0156 20Z" fill="#121212"/>
+</g>
+<defs>
+<clipPath id="clip0_325_11834">
+<rect width="6" height="12" fill="white" transform="matrix(1 0 0 -1 17 26)"/>
+</clipPath>
+</defs>
+</svg>

@@ -7,7 +7,8 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -119,8 +120,6 @@
     <main class="main">
 
       <div class="container">
-        <a class="btn" href="#modal-2" data-fancybox data-src="#modal-2">modal-1</a>
-        <a class="btn" href="#" data-fancybox data-src="#modal-3">modal-2</a>
         <a class="btn" href="#" data-fancybox data-src="#modal-4">modal-3</a>
       </div>
 
@@ -131,171 +130,23 @@
 
 
 
-  <div id="modal-2" class="modal">
-    <div class="modal__inner">
-      <div class="modal__left">
-        <img src="images/content/product-1.webp" alt="img">
-      </div>
-      <div class="modal__right">
-        <div class="product__right">
-          <ul class="stickers">
-            <li class="stickers__yellow">best</li>
-          </ul>
-          <div class="product-item__box">
-            <div class="product-item__price">
-              220 €
-            </div>
-            <div class="product-item__old-price">
-              250 €
-            </div>
-          </div>
-          <h6>Product name product name</h6>
-          <div class="rateYo-wrap">
-            <div class="rateYo_reviews"></div>
-            <div class="rateYo-review-quantity">
-              (<span>7</span> review)
-            </div>
-          </div>
-          <div class="product__text">
-            <p>Lorem ipsum dolor sit amet consectetur. Blandit est laoreet et sed. Ut commodo facilisis commodo
-              lectus aliquam habitant molestie amet.</p>
-          </div>
-          <ul class="product__list">
-            <li>Eu lacus ante eget tincidunt libero.</li>
-            <li> Vestibulum auctor morbi enim donec elit 30%</li>
-          </ul>
-          <div class="product__box">
-            <div class="product__box-col">
-              <span>Quantity:</span>
-              <div class="calc">
-                <button class="calc__minus">
-                  <img src="images/icons/minus.svg" alt="icon">
-                </button>
-                <input type="text" value="1" readonly>
-                <button class="calc__plus">
-                  <img src="images/icons/plus.svg" alt="icon">
-                </button>
-                <a href="#" class="btn btn--orange">
-                  Переглянути
-                </a>
-              </div>
-            </div>
-            <div class="product__box-col">
-              <span>Color:</span>
-              <!-- <div class="select">
-                <select class="color" id="color" required name="color">
-                  <option>Black</option>
-                  <option>Blue</option>
-                  <option>Orange</option>
-                  <option>Pink</option>
-                  <option>Red</option>
-                  <option>White</option>
-                </select>
-              </div> -->
-              <div class="dropdown" onclick="toggleDropdown(this)">
-                <button class="dropbtn">Choose a color</button>
-                <ul class="dropdown-content">
-                  <li onclick="selectOption(this)">Black</li>
-                  <li onclick="selectOption(this)">Blue</li>
-                  <li onclick="selectOption(this)">Orange</li>
-                  <li onclick="selectOption(this)">Pink</li>
-                  <li onclick="selectOption(this)">Red</li>
-                  <li onclick="selectOption(this)">White</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="product__btns">
-            <button class="btn btn--dark">Add to cart</button>
-            <button class="product__add">
-              <img class="product__add-one" src="images/icons/heart.svg" alt="like">
-              <img class="product__add-two" src="images/icons/heart2.svg" alt="like">
-            </button>
-          </div>
 
-          <div class="product__bottom">
-            <div class="product__bottom-item">
-              <strong>SKU:</strong>
-              <p>29045-SB</p>
-            </div>
-            <div class="product__bottom-item">
-              <strong>Category: </strong>
-              <p>Category name</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="modal-3" class="modal">
-    <div class="modal__inner">
-      <div class="modal__left">
-        <img src="images/content/product-1.webp" alt="img">
-      </div>
-      <div class="modal__right">
-        <div class="product__right">
-          <h6>Product name product name</h6>
-          <div class="product__box">
-            <div class="product__box-col">
-              <span>Quantity:</span>
-              <div class="calc">
-                <button class="calc__minus">
-                  <img src="images/icons/minus.svg" alt="icon">
-                </button>
-                <input type="text" value="1" readonly>
-                <button class="calc__plus">
-                  <img src="images/icons/plus.svg" alt="icon">
-                </button>
-                <a href="#" class="btn btn--orange">
-                  Переглянути
-                </a>
-              </div>
-            </div>
-            <div class="product__box-col">
-              <span>Color:</span>
-              <!-- <div id="select" class="select">
-                <select class="color2" id="color2" required name="color2">
-                  <option>Black</option>
-                  <option>Blue</option>
-                  <option>Orange</option>
-                  <option>Pink</option>
-                  <option>Red</option>
-                  <option>White</option>
-                </select>
-              </div> -->
-              <div class="dropdown" onclick="toggleDropdown(this)">
-                <button class="dropbtn">Choose a color</button>
-                <ul class="dropdown-content">
-                  <li onclick="selectOption(this)">Black</li>
-                  <li onclick="selectOption(this)">Blue</li>
-                  <li onclick="selectOption(this)">Orange</li>
-                  <li onclick="selectOption(this)">Pink</li>
-                  <li onclick="selectOption(this)">Red</li>
-                  <li onclick="selectOption(this)">White</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="product__btns">
-            <button class="btn btn--dark">Add to cart</button>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
   <div id="modal-4" class="modal">
     <div class="modal__inner">
-      <h6>Forgot Password</h6>
-      <p>If you forgot your password, recover it by entering your email address. </p>
+      <h6>Швидке замовлення</h6>
+      <p>Заповніть форму нижче, і ми зв'яжемося з вами для уточнення деталей.</p>
       <form class="form">
         <div class="form__group error">
-          <label for="email">Email</label>
-          <input id="email" maxlength="40" name="email" required="" type="email" >
+          <label for="name">Ваше ім’я</label>
+          <input id="name" maxlength="40" name="name" required="" type="name" placeholder="Олександр">
           <span class="error-text">Error</span>
         </div>
-        <button class="btn btn--dark">Send</button>
+        <div class="form__group error">
+          <label for="tel">Номер телефону</label>
+          <input id="tel" maxlength="40" name="tel" required="" type="tel" >
+          <span class="error-text">Error</span>
+        </div>
+        <button class="btn btn--green">Надіслати</button>
       </form>
     </div>
   </div>
