@@ -597,8 +597,22 @@
 
 }
 .product-slider_two-row{
+	position: relative;
+	width: 100%;
+	height: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+	&>.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+		height: calc((100% - 30px) / 2) !important;
 
-
+		/* Center slide text vertically */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 

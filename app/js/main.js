@@ -164,6 +164,9 @@ $(".accordeon dl:first dt").addClass("active");
       992: {
         slidesPerView: 4,
         spaceBetween: 20,
+        grid: {
+          rows: 2,
+        },
       },
     }
   });
