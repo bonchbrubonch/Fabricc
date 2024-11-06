@@ -20,7 +20,7 @@ $(function () {
   });
 
   // filter
-  $(".category-listt__child-item, .category-listt__chek").on("click", function () {
+  $(".category-listt__child-item, .category-listt__check").on("click", function () { // виправлено клас .category-listt__check
     $(this).toggleClass("open active");
   });
 
@@ -53,19 +53,19 @@ $(function () {
     $(".cabinet__left").removeClass("open");
   });
 
- //accordeon
- $(".accordeon dd").hide().prev().click(function () {
-  $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
-  $(this).next().not(":visible").slideDown().prev().addClass("active");
-  $("dl").removeClass("open");
-  $(this).parent().toggleClass("open");
-});
+  // accordeon
+  $(".accordeon dd").hide().prev().click(function () {
+    $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
+    $(this).next().not(":visible").slideDown().prev().addClass("active");
+    $("dl").removeClass("open");
+    $(this).parent().toggleClass("open");
+  });
 
-// Додаємо клас "open" для першого елемента
-$(".accordeon dl:first").addClass("open");
-// Показуємо відповідний "dd" для першого елемента
-$(".accordeon dl:first dd").show();
-$(".accordeon dl:first dt").addClass("active");
+  // Додаємо клас "open" для першого елемента
+  $(".accordeon dl:first").addClass("open");
+  // Показуємо відповідний "dd" для першого елемента
+  $(".accordeon dl:first dd").show();
+  $(".accordeon dl:first dt").addClass("active");
 
   // rating star
   $(".rateYo_reviews").rateYo({
@@ -93,25 +93,25 @@ $(".accordeon dl:first dt").addClass("active");
   });
 
   // меню гамбургер
-  const menuBtn = document.querySelector(".header__menu-btn");
-  const navMenu = document.querySelector(".header__nav");
-  const header = document.querySelector(".header");
+const menuBtn = document.querySelector(".header__menu-btn");
+const navMenu = document.querySelector(".header__nav");
+const header = document.querySelector(".header");
 
-  if (menuBtn && navMenu && header) {
-    menuBtn.addEventListener("click", function () {
-      this.classList.toggle("active");
-      navMenu.classList.toggle("open");
-      document.body.classList.toggle("lock bg-dark");
-      header.classList.toggle("active");
-    });
-  }
+if (menuBtn && navMenu && header) {
+  menuBtn.addEventListener("click", function () {
+    this.classList.toggle("active");
+    navMenu.classList.toggle("open");
+    document.body.classList.toggle("lock");
+    header.classList.toggle("active");
+  });
+}
 
-  const productAdd = document.querySelector('.product__add');
-  if (productAdd) {
-    productAdd.addEventListener('click', function () {
-      this.classList.toggle('active');
-    });
-  }
+const productAdd = document.querySelector('.product__add');
+if (productAdd) {
+  productAdd.addEventListener('click', function () {
+    this.classList.toggle('active');
+  });
+}
 
   // sliders initialization
   var swiperIntro = new Swiper(".intro__slider", {
@@ -128,10 +128,14 @@ $(".accordeon dl:first dt").addClass("active");
     },
   });
 
-  var swiperProductSlider = new Swiper(".product-slider", {
+  var swiperProductSliderOneRow = new Swiper(".product-slider", { // зміна назви змінної
     slidesPerView: 1.2,
     spaceBetween: 15,
-    loop: true,
+    loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -148,10 +152,14 @@ $(".accordeon dl:first dt").addClass("active");
     }
   });
 
-  var swiperProductSlider = new Swiper(".product-slider_two-row", {
+  var swiperProductSliderTwoRow = new Swiper(".product-slider_two-row", { // зміна назви змінної
     slidesPerView: 1.2,
     spaceBetween: 15,
-    loop: true,
+    loop: false,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -171,11 +179,10 @@ $(".accordeon dl:first dt").addClass("active");
     }
   });
 
-
   var swiper = new Swiper(".info__slider", {
     slidesPerView: 1.2,
     spaceBetween: 15,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -195,6 +202,7 @@ $(".accordeon dl:first dt").addClass("active");
   var swiperProductImgSlider = new Swiper(".product-item__img-slider", {
     loop: true,
     spaceBetween: 0,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next1",
       prevEl: ".swiper-button-prev1",
@@ -204,7 +212,7 @@ $(".accordeon dl:first dt").addClass("active");
   var swiperReviewSlider = new Swiper(".review__slider", {
     slidesPerView: 1,
     spaceBetween: 20,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -265,7 +273,7 @@ $(".accordeon dl:first dt").addClass("active");
   }
 });
 
-//
+// Обробка елементів в .cabinet__items-wrap
 $('.cabinet__items-wrap').each(function () {
   let ths = $(this);
   ths.find('.cabinet__right-items').not(':eq(1)').hide(); // Приховуємо всі, крім другого елемента

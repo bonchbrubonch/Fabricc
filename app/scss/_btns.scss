@@ -16,7 +16,7 @@
 	line-height: 140%;
 	transition: linear .2s;
 	background-color: transparent;
-
+	text-transform: inherit !important;
 	&:hover {
 		background-color: #000;
 		color: #fff;
@@ -31,7 +31,7 @@
 	}
 	&--white{
 		background-color: #fff;
-		color: #93AF99;
+		color: rgb(71, 105, 48);
 	}
 	&--dark {
 		background-color: #2B2A29;

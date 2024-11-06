@@ -129,11 +129,14 @@
 	.header__nav li+li {
 		margin: 0 0 0 20px;
 	}
+
 	.cabinet__info-box {
-    max-width: 205px;
+		max-width: 205px;
 	}
 
-
+	.quick-box {
+		transform: translateX(0);
+	}
 
 
 
@@ -739,14 +742,17 @@
 		font-weight: 400;
 		line-height: 140%;
 	}
-	.cabinet__buttons{
+
+	.cabinet__buttons {
 		margin: 0 0 20px 0;
 	}
+
 	.cabinet__btn {
 		font-size: 12px;
-    padding: 10px 10px;
+		padding: 10px 10px;
 	}
-	.product-slider_two-row{
+
+	.product-slider_two-row {
 		height: auto;
 	}
 }
@@ -1207,7 +1213,7 @@
 	}
 
 	.title::after {
-		height: 3px;
+		height: 6px;
 		width: 35px;
 	}
 
@@ -1252,7 +1258,13 @@
 		width: calc(50% - 25px);
 	}
 
+	.product__table-col:nth-child(3) {
+		width: 15%;
+	}
 
+	.product__table-col:nth-child(4) {
+		width: 35%;
+	}
 
 
 }
@@ -1376,7 +1388,7 @@
 	}
 
 	.cabinet__order-wrap {
-		width: 500px;
+		width: 600px;
 	}
 
 	.cabinet__info-wrap {
@@ -1417,7 +1429,7 @@
 
 	.footer__col:nth-child(4) {
 		max-width: 100% !important;
-		width: calc(100% - 30px);
+		width: calc(100% - 20px);
 
 		ul {
 			margin: 0 0 0 -20px;
@@ -1426,8 +1438,8 @@
 		}
 
 		li {
-			margin: 0 0 10px 20px;
-			width: calc(50% - 20px);
+			margin: 0 0 10px 10px;
+			width: calc(50% - 10px);
 		}
 	}
 
@@ -1458,25 +1470,14 @@
 		margin: 0 0 15px 0;
 	}
 
-	.product__table-col:nth-child(1) {
-		width: 50%;
-	}
-
 	.product__table-col:nth-child(2) {
-		width: 50%;
-
 		.calc {
 			width: 100% !important;
 		}
 	}
 
-	.product__table-col:nth-child(3) {
-		width: 50%;
-
-	}
 
 	.product__table-col:nth-child(4) {
-		width: 50%;
 
 		.btn {
 			width: 100% !important;
@@ -1487,7 +1488,6 @@
 		width: calc(50% - 10px);
 	}
 
-	.product__table-top .product__table-col:nth-child(3),
 	.product__table-top .product__table-col:nth-child(4) {
 		display: none;
 	}
@@ -1520,4 +1520,19 @@
 
 
 
+}
+
+@media (max-width: 440px) {
+	.product__table-col {
+		width: 33.33333% !important;
+		padding: 0!important;
+	}
+	.product__table-col:nth-child(4){
+		width: 100% !important;
+	}
+	.product__table-col:nth-child(3){
+		text-align: center;
+	}
+	.product__table-col:nth-child(1) p {
+    font-size: 12px;}
 }
