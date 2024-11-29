@@ -282,3 +282,27 @@ $('.cabinet__items-wrap').each(function () {
     ths.find('.cabinet__right-items').hide().eq($(this).index()).fadeIn(1000);
   }).eq(1).addClass('active'); // Додаємо клас "active" другому елементу
 });
+
+//////
+document.addEventListener('DOMContentLoaded', function () {
+  // Отримуємо всі елементи з класом header__basket
+  const headerBaskets = document.querySelectorAll('.header__basket');
+
+  headerBaskets.forEach(headerBasket => {
+    const basketBox = headerBasket.querySelector('.basket-box');
+    const closeButton = basketBox.querySelector('.basket-box__close');
+
+    // Додаємо клас 'open' при кліку на headerBasket
+    headerBasket.addEventListener('click', function () {
+      basketBox.classList.add('open');
+    });
+
+    // Прибираємо клас 'open' при кліку на closeButton
+    closeButton.addEventListener('click', function (event) {
+      event.stopPropagation(); // Щоб не активувати клік на headerBasket
+      basketBox.classList.remove('open');
+    });
+  });
+});
+
+
