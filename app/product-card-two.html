@@ -25,16 +25,6 @@
     integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-    integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css"
-    integrity="sha512-lvaVbvmbHhG8cmfivxLRhemYlTT60Ly9Cc35USrpi8/m+Lf/f/T8x9kEIQq47cRj1VQIFuxTxxCcvqiQeQSHjQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -89,9 +79,8 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__avatar header__avatar--active">
+        <a href="#" class="header__avatar">
           <img src="images/icons/user-cabinet.svg" alt="icon">
-          О
         </a>
         <a href="#" class="header__search" data-fancybox data-src="#modal-1">
           <div class="header__search-icon">
@@ -130,158 +119,168 @@
   <div class="wrapper">
     <main class="main">
 
-      <section class="checkout page-padding">
+      <section class="product">
         <div class="container">
-          <h3 class="title">Оформлення замовлення</h3>
           <div class="breadcrumbs">
             <div class="breadcrumbs__inner">
               <ul class="breadcrumbs__list">
                 <li> <a href="#">Головна</a></li>
-                <li> <span>Оформлення замовлення</span></li>
+                <li> <a href="#">Тканини в роздріб</a></li>
+                <li> <a href="#">Батист</a></li>
+                <li> <span>Назва товару в один - два рядки</span></li>
               </ul>
             </div>
           </div>
-          <div class="checkout__inner form">
-            <div class="checkout__left">
-              <div class="checkout__box">
-                <div class="checkout__box-title">Ваші контактні дані
-                </div>
-                <div class="form__sm">
-                  <div class="form__group">
-                    <label for="Name">Ім’я *</label>
-                    <input maxlength="40" name="Name" required="" type="text" placeholder="Олександр">
+          <div class="product__inner">
+            <div class="product__left">
+              <div class="product__slider">
+                <ul class="stickers">
+                  <li class="stickers__white">best</li>
+                </ul>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
                   </div>
-                  <div class="form__group">
-                    <label for="email">Прізвище *</label>
-                    <input maxlength="40" name="Name" required="" type="text" placeholder="Іванов">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
-                  <div class="form__group">
-                    <label for="email">По батькові</label>
-                    <input maxlength="40" name="Name" required="" type="text" placeholder="Іванич">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
                   </div>
-
-                </div>
-                <div class="form__md">
-                  <div class="form__group">
-                    <label for="Phone">Номер телефону *</label>
-                    <input maxlength="40" name="Phone" required="" type="number" placeholder="+38 (012) - 345 - 67 - 89">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
-                  <div class="form__group">
-                    <label for="email">Email *</label>
-                    <input maxlength="40" name="email" required="" type="email">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
                 </div>
               </div>
-              <div class="checkout__box">
-                <div class="checkout__box-title">Оплата</div>
-                <div class="basket-form">
-                  <label class="basket-form__label">
-                    <input class="basket-form__radio" type="radio" name="name1">
-                    <div class="basket-form__check-fake"></div>
-                    <span class="basket-form__check-text">Оплата картою</span>
-                  </label>
-                  <label class="basket-form__label">
-                    <input class="basket-form__radio" type="radio" name="name1">
-                    <div class="basket-form__check-fake"></div>
-                    <span class="basket-form__check-text">Оплата при отриманні</span>
-                  </label>
-  
-                </div>
-                <p class="checkout__subinfo">Lorem ipsum dolor sit amet consectetur. Fusce vitae vestibulum nam et elit tortor. Elit sagittis sed venenatis amet mauris eget purus scelerisque quam.</p>
-              </div>
-              <div class="checkout__box">
-                <div class="checkout__box-title">Доставка</div>
-                <div class="basket-form">
-                  <label class="basket-form__label">
-                    <input class="basket-form__radio" type="radio" name="name2">
-                    <div class="basket-form__check-fake"></div>
-                    <span class="basket-form__check-text">Нова пошта <strong>відділення</strong></span>
-                  </label>
-                  <label class="basket-form__label">
-                    <input class="basket-form__radio" type="radio" name="name2">
-                    <div class="basket-form__check-fake"></div>
-                    <span class="basket-form__check-text">Нова пошта <strong>поштомат</strong> </span>
-                  </label>
-                  <label class="basket-form__label">
-                    <input class="basket-form__radio" type="radio" name="name2">
-                    <div class="basket-form__check-fake"></div>
-                    <span class="basket-form__check-text">Нова пошта <strong>кур’єр</strong> </span>
-                  </label>
-                  <label class="basket-form__label">
-                    <input class="basket-form__radio" type="radio" name="name2">
-                    <div class="basket-form__check-fake"></div>
-                    <span class="basket-form__check-text">Самовивіз</span>
-                  </label>
-                </div>
-                  <div class="form__group">
-                    <label for="country">Область</label>
-                    <input name="country" required type="text">
+              <div thumbsSlider="" class="product__slider-side">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
                   </div>
-           
-                  <div class="form__group">
-                    <label for="country">Населений пункт</label>
-                    <input name="country" required type="text">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
                   </div>
-           
-                  <div class="form__group">
-                    <label for="country">Відділення</label>
-                    <input name="country" required type="text">
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
                   </div>
-           
-              </div>
-              <div class="checkout__box">
-                <div class="checkout__box-title">Коментар до замовлення</div>
-                <div class="form__group">
-                  <label for="email">Текст</label>
-                  <textarea></textarea>
-                </div>
-                <div class="form__bottom-text">
-                  <span></span>Підтверджую своє замовлення. Дзвінок для уточнення не потрібен.
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-1.webp" alt="img">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/content/product-2.webp" alt="img">
+                  </div>
                 </div>
               </div>
-
             </div>
-            <div class="cart__right cart__right--two">
-              <h6>Підсумки кошика</h6>
-              <div class="cart__right-box">
-                <h5>Товарів оптом</h5>
-                <div class="cart__right-info">
-                  <p>Кількість:</p>
-                  <span class="cart__info-price">10</span>
-                </div>
-                <div class="cart__right-info">
-                  <p>Всього:</p>
-                  <span class="cart__info-price"> 10 778₴ </span>
-                </div>
+            <div class="product__right">
+
+              <div class="product__box-top">
+                <h6>Назва товару в один - два рядки</h6>
+                <button class="product__add">
+                  <img class="product__add-one" src="images/icons/heart.svg" alt="like">
+                  <img class="product__add-two" src="images/icons/heart2.svg" alt="like">
+                </button>
               </div>
-              <div class="cart__right-box">
-                <h5>Товарів в роздріб</h5>
-                <div class="cart__right-info">
-                  <p>Кількість:</p>
-                  <span class="cart__info-price">6</span>
-                </div>
-                <div class="cart__right-info">
-                  <p>Всього:</p>
-                  <span class="cart__info-price"> 2 620₴ </span>
+              <div class="rateYo-wrap">
+                <div class="rateYo_reviews"></div>
+                <div class="rateYo-review-quantity">
+                  (<span>7</span> відгуків)
                 </div>
               </div>
-           
-              <div class="cart__right-info cart__right-info--quantity">
-                <p>Доставка:</p>
-                <span class="cart__info-num">за тарифом перевізника</span>
+              <div class="product__box-price">
+                <div class="product-item__old-price">2499 - 5880 ₴</div>
+                <span>в залежності від довжини рулону</span>
               </div>
-              <div class="cart__right-info cart__right-info--delivery">
-                <p>Всього вартість кошика</p>
-                <span class="cart__info-num">13 398 ₴</span>
+              <div class="product-item__price">
+                147 ₴ <span>/м.п.</span>
               </div>
-              <div class="cart__right-subinfo">Підтверджуючи замовлення, ви погоджуєтесь на обробку персональних даних.</div>
-              <button class="btn btn--green">Оформити замовлення</button>
-              <a href="#">Редагувати кошик</a>
+              <div class="product__text">
+                <p>Lorem ipsum dolor sit amet consectetur. Egestas est euismod dolor hendrerit tempus vitae ac ut
+                  facilisi. Ipsum a mauris magnis urna egestas ut. Viverra congue egestas sit neque lacus sapien semper
+                  eu. Praesent nulla turpis a ornare sit iaculis massa aliquam.</p>
+              </div>
+              <div class="product__box-wrap">
+                <div class="calc-wrap">
+                  <span>Quantity:</span>
+                  <div class="calc">
+                    <button class="calc__minus">
+                      <img src="images/icons/minus.svg" alt="icon">
+                    </button>
+                    <input type="text" value="1" readonly="">
+                    <button class="calc__plus">
+                      <img src="images/icons/plus.svg" alt="icon">
+                    </button>
+                  </div>
+                </div>
+                <a href="#" class="btn btn--green">Додати в кошик</a>
+                <a href="#" class="btn btn--mint">Купити в 1 клик</a>
+              </div>
+              <div class="product__bot">
+               <strong> SKU:</strong> 29045-SB 
+              </div>
             </div>
           </div>
-
         </div>
       </section>
+
+      <section class="product-tab">
+        <div class="container">
+          <div class="product-tab__btns">
+            <a href="#" class="btn active">Характеристики</a>
+            <a href="#" class="btn">(<span>7</span> відгуків)</a>
+          </div>
+          <div class="product-tab__content">
+            <p>Lorem ipsum dolor sit amet consectetur. Libero integer pharetra pellentesque nullam pellentesque nisi
+              nisl leo laoreet. Faucibus at vulputate dis eget nibh tellus eu imperdiet ipsum. Curabitur aliquet
+              volutpat magna egestas lorem ipsum ultricies at. Orci morbi eu ridiculus suspendisse. Volutpat mi pretium
+              semper hendrerit purus. Sed lectus lacus facilisis facilisi proin malesuada elit. Sodales id arcu amet id
+              luctus eros arcu a. Ornare nam purus dictumst nibh in turpis tempor. Non ac orci ante vitae. A quis nec
+              nisi convallis risus amet vulputate ac sem. Eu nunc sit sit duis nunc. A parturient maecenas bibendum
+              lorem arcu quis amet vulputate. Aliquet facilisis sed egestas cursus et at venenatis dui.</p>
+            <p> Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra. Proin interdum egestas
+              neque ac. Imperdiet natoque nisi neque ullamcorper magna. Pretium elementum commodo vitae viverra purus
+              et. Aliquam commodo egestas magna vestibulum tellus magna arcu. Velit nibh iaculis felis libero nisl
+              tristique nulla lacus vivamus. Ut ut eget facilisis pellentesque nunc et.</p>
+            <h6>Auctor viverra aliquet est urna duis ultrices quam eget.</h6>
+            <p> Auctor viverra aliquet est urna duis ultrices quam eget. Hac magna purus ut tempus viverra at praesent
+              tincidunt habitant. Porttitor pellentesque sit interdum cras ultrices sed porta. Egestas sed dui sit
+              congue cursus. Pharetra aliquet enim diam ultricies nascetur cum diam scelerisque mauris. Sed lacus ipsum
+              turpis porttitor risus scelerisque lectus ultrices viverra. Consequat non posuere ut amet mauris euismod
+              magna elit volutpat. Leo aenean ante suspendisse ut vitae.</p>
+            <h6>Eget in duis enim elit amet</h6>
+            <p> Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra. Proin interdum egestas
+              neque ac. Imperdiet natoque nisi neque ullamcorper magna. Pretium elementum commodo vitae viverra purus
+              et. Aliquam commodo egestas magna vestibulum tellus magna arcu. Velit nibh iaculis felis libero nisl
+              tristique nulla lacus vivamus. Ut ut eget facilisis pellentesque nunc et.</p>
+            <p> Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra. Proin interdum egestas
+              neque ac. Imperdiet natoque nisi neque ullamcorper magna. Pretium elementum commodo vitae viverra purus
+              et. Aliquam commodo egestas magna vestibulum tellus magna arcu. Velit nibh iaculis felis libero nisl
+              tristique nulla lacus vivamus. Ut ut eget facilisis pellentesque nunc et.</p>
+            <p> Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra. Proin interdum egestas
+              neque ac. Imperdiet natoque nisi neque ullamcorper magna. Pretium elementum commodo vitae viverra purus
+              et. Aliquam commodo egestas magna vestibulum tellus magna arcu. Velit nibh iaculis felis libero nisl
+              tristique nulla lacus vivamus. Ut ut eget facilisis pellentesque nunc et.</p>
+            <h6>Eget in duis enim elit amet</h6>
+            <ul>
+              <li>Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra.</li>
+              <li>Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra.</li>
+              <li>Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra.</li>
+              <li>Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra.</li>
+              <li>Eget in duis enim elit amet. Eget nec odio duis pulvinar vestibulum pharetra.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="subscribe">
         <div class="container">
           <div class="subscribe__inner">
@@ -400,29 +399,24 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-  integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
-  integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+    integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-  integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"
-  integrity="sha512-fCRpXk4VumjVNtE0j+OyOqzPxF1eZwacU3kN3SsznRPWHgMTSSo7INc8aY03KQDBWztuMo5KjKzCFXI/a5rVYQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-<script src="js/main.min.js"></script>
+  <script src="js/main.min.js"></script>
 
 
 </body>

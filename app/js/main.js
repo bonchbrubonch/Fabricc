@@ -156,10 +156,10 @@ if (productAdd) {
     slidesPerView: 1.2,
     spaceBetween: 15,
     loop: false,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
