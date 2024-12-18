@@ -218,6 +218,10 @@ if (productAdd) {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
       992: {
         slidesPerView: 3,
         spaceBetween: 20,
@@ -285,24 +289,23 @@ $('.cabinet__items-wrap').each(function () {
 
 //////
 document.addEventListener('DOMContentLoaded', function () {
-  // Отримуємо всі елементи з класом header__basket
-  const headerBaskets = document.querySelectorAll('.header__basket');
+  const basketButton = document.querySelector('.header__basket'); // шукаємо елемент за класом .header__basket
+  const basketBox = document.querySelector('.basket-box');
+  const closeButton = document.querySelector('.basket-box__close');
+  const body = document.querySelector('body'); // Для додавання класу bg-dark до body
 
-  headerBaskets.forEach(headerBasket => {
-    const basketBox = headerBasket.querySelector('.basket-box');
-    const closeButton = basketBox.querySelector('.basket-box__close');
+  // Додаємо класи при кліку на header__basket
+  basketButton.addEventListener('click', function () {
+    basketBox.classList.add('open');
+    body.classList.add('bg-dark');
+  });
 
-    // Додаємо клас 'open' при кліку на headerBasket
-    headerBasket.addEventListener('click', function () {
-      basketBox.classList.add('open');
-    });
-
-    // Прибираємо клас 'open' при кліку на closeButton
-    closeButton.addEventListener('click', function (event) {
-      event.stopPropagation(); // Щоб не активувати клік на headerBasket
-      basketBox.classList.remove('open');
-    });
+  // Прибираємо класи при кліку на basket-box__close
+  closeButton.addEventListener('click', function () {
+    basketBox.classList.remove('open');
+    body.classList.remove('bg-dark');
   });
 });
+
 
 
